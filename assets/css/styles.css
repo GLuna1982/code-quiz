@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* color variables */
+:root {
+    --btnLink1: #B533FF;
+    --btnLink2:#6C00A9;
+    --colorFont: #000000;
+    --btnFont: #FFFF;
+}
+
+/* Body styling */
+body {
+    background-color: #FFFAFA;
+    color: var(--colorFont);
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* Headline and paragraph styling */
+h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+/* All sections styling */
+.contain {
+    display: flex;
+    
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Header styling starts here */
+header {
+    background-color: #FFFAFA;
+    max-width: auto;
+    height: 100%;
+    margin: 0 auto;
+    position: sticky;
+    position: --webkit-sticky;
+    top: 0;
+    z-index: 999;  
+}
+
+/* Navigation bar styling */
+nav {
+    padding: 2.5%;
+    align-items: center;
+    justify-content: right;   
+}
+
+/* Link styling */
+a {
+    color: var(--btnLink1);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--btnLink2);
+}
+.navbar {
+    justify-content: space-between;
+}
+.timer {
+    padding: 2.5%;
+    align-items: center;
+    justify-content: left;
+}
+
+/* Main section styling for all pages */
+main {
+    position: relative;
+    padding: 10% 5%;
+    margin: 10% 5%;
+    justify-content: space-around;
+}
+
+/* Home page main content styling */
+.content {
+    position: relative;
+    height: 50%;
+}
+
+.button {
+    height: 50%;
+    position: relative;
+    padding-top: 5%;
+    align-items: center;
+}
+
+.btn {
+    margin: 0;
+    padding: 2.5%;
+    height: 50px;
+    width: 120px;
+    color: var(--btnFont);
+    background-color: var(--btnLink2);
+    border-color: var(--btnLink2);
+    border-radius: 5%;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: var(--btnLink1);
+    border-color: var(--btnLink1);
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 5%;
+    margin: 0 5%;
+    position: sticky;
+    position: --webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+footer div {
+    margin: auto;
+}
+
+/* Media Screen max-widths */
+@media screen and (max-width:360px) {
+    h1 {
+        font-size: 40px;
+        margin: 15px 0;
+    }
+    p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+}
+
+@media screen and (max-width:540px) {
+    main{
+        height: auto;
+    }
+    .button {
+        height: 80%;
+    }
+}
+
