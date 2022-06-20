@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "./assets/css/styles.css">
-    <link rel="script" href="./assets/js/script.js">
+    
     <title>Code Quiz</title>
 </head>
 <body>
@@ -13,11 +13,11 @@
         <nav>
             <a href="high-score-page.html"><h3>View High Scores</h3></a>            
         </nav>
-        <div class="timer">
-            <h3>Time:0</h3>
+        <div>
+            <h3>Time:<span id="timer">0</span></h3>
         </div>
     </header>
-    <main class="contain">
+    <main class="contain" id="main-section">
         <div>
             <h1>Coding Quiz</h1>
             <br>
@@ -25,11 +25,21 @@
             <p>Keep in mind that if your answer is incorrect you'll be deducted 10 seconds from the time/score.</p>
         </div>
     </main>
-    <div class="contain bttn1">
-        <button class="btn" type="button" onclick="submit">Start Quiz</button>
+    <div class="contain bttn1" id="main-btn">
+        <button class="btn" id="start" type="button">Start Quiz</button>
+    </div>
+    <!--Initial hidden main section, will be visible when Start Quiz button is clicked-->
+    <div class="contain" id="hide">
+        <div>
+            <h1 id="q1"></h1>
+            <br>
+        </div>
+    </div>
+    <!--Initial hidden button section, will be visible when Start Quiz button is clicked-->
+    <div class="contain bttn1" id="hide-btn">
     </div>
     <footer class="contain">
-        <h4>Made by Gretthel Luna</h4>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

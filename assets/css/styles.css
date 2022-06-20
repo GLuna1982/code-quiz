@@ -50,6 +50,14 @@ p {
     text-align: center;
 }
 
+/* Hides content that doesn't need to be displayed */
+#hide {
+    display: none;
+}
+
+#hide-btn {
+    display: none;
+}
 /* Header styling starts here */
 header {
     background-color: #FFFAFA;
@@ -94,20 +102,38 @@ main {
     position: relative;
     justify-content: space-around;
 }
+/*Questions Main section */
+#q-main {
+    margin: 30px 0;
+    padding: 25px 10px;
+    position: relative;
+    justify-content: space-around;   
+}
+
 /* Button Section styling */
 .bttn1 {
     justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+/* Shows answer buttons */
+#view-btn {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
 }
 .btn {
-    margin: 0;
+    margin: 10px;
     padding: 10px;
     height: 50px;
-    width: 120px;
+    width: 200px;
     color: var(--btnFont);
     background-color: var(--btnLink2);
     border-color: var(--btnLink2);
     border-radius: 5%;
     font-size: 18px;
+    text-align: center;
 }
 .btn:hover {
     background-color: var(--btnLink1);
