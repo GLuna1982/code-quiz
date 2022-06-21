@@ -1,6 +1,8 @@
 var questionEl = document.querySelector("#q1");
 var buttonQsEl = document.querySelector("#hide-btn");
 var counter = 90;
+
+//
 function show () {
     document.getElementById("hide").id = "q-main";
     document.getElementById("hide-btn").id = "view-btn";
@@ -27,11 +29,11 @@ questionEl.textContent = "Inside which HTML element do we put the JavaScript?";
         var answerEl = document.createElement("button");
         answerEl.className = "btn";
         answerEl.textContent = answerArray[i];
-        console.log (answerEl);
         buttonQsEl.appendChild(answerEl);
     }
-    if (answerEl.textContent == answerArray[1]) {
-        changeQ();
+
+    if (answerEl.value == "<script>") {
+        console.log(answerArray.value);
     }
     else {
         
